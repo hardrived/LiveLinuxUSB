@@ -1,0 +1,9 @@
+sudo ls -l /dev/disk/by-id/*usb*
+
+Now cd to where your *.iso is located
+
+cd /Downloads
+
+Now write
+
+sudo dd if=filename.iso of=/dev/usbdevice bs=4M; sync
